@@ -1,0 +1,382 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #395ba3;
+    background-image: url('bailen3.jpg');
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+}
+
+header {
+    background-image: linear-gradient(to top, var(#20242f), transparent),
+        url("bailen3.jpg");
+    color: rgb(94, 250, 107);
+    padding: 1em 0;
+    text-align: center;
+}
+
+    header h1 {
+        margin: 0;
+    }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+        nav ul li a {
+            color: rgb(184, 0, 0);
+            text-decoration: none;
+        }
+
+main {
+    padding: 1em;
+    text-align: center; /* Center-align content within main */
+}
+
+    main h2, main h3 {
+        margin-top: 20px;
+    }
+
+    main img {
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* styles.css */
+
+/* Basic styling for navigation */
+nav {
+    background-color: #283739;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(23, 75, 11);
+    margin: 4px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    background-color: #575757; /* Change background color on hover */
+    color: #050a03; /* Change text color on hover */
+    border-radius: 5px; /* Add rounded corners on hover */
+}
+
+/* Video background */
+.container{
+    background-color: rgba(104, 214, 45, 0.8);
+    width: 80vw;
+    margin-left: 100px;
+    padding: 20px;
+    color: #050a03;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: rgb(184, 226, 31);
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background: #7D8ABC;
+    padding: 20px;
+    background-image: linear-gradient(to top, var(#20242f), transparent),
+        url("bailen3.jpg");
+}
+
+main {
+    position: relative;
+    padding: 20px;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Reset some basic elements */
+body, h1, h2, p, ul, li, nav, header, footer, main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 1.3rem;
+    background-image: url('bailen3.jpg');
+    
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+}
+
+main {
+    padding: 1rem;
+    text-align: center;
+}
+
+main h2 {
+    margin: 1rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-container {
+    margin: 2rem 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    nav ul.nav-active {
+        display: flex;
+    }
+}
+
+.submenu li {
+    padding: 10px;
+}
+
+.submenu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+}
+
+/* Adjustments for burger menu (optional) */
+.burger {
+    display: none;
+}
+
+
+/* Responsive adjustments (optional) */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links.active li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+    }
+    .container{
+        margin-left: 0;
+    }
+}
+
